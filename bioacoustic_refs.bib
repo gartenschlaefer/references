@@ -1,0 +1,97 @@
+# --
+# bioacoustic reference collections
+
+% schlüter, bird
+@inproceedings{Schlter2018BirdIF,
+  author={Jan Schl{\"u}ter},
+  title={Bird Identification from Timestamped, Geotagged Audio Recordings},
+  booktitle={Conference and Labs of the Evaluation Forum},
+  year={2018},
+  url={https://api.semanticscholar.org/CorpusID:51941747},
+}
+
+% arbimon
+@article{Aide2013Arbimon,
+  author = {T. Mitchell Aide and Carlos Corrada-Bravo and Marconi Campos-Cerqueira and Carlos Milan and Giovany Vega and Rafae Alvarez},
+  title = {Real-time bioacoustics monitoring and automated species identification},
+  abstract = {Traditionally, animal species diversity and abundance is assessed using a variety of methods that are generally costly, limited in space and time, and most importantly, they rarely include a permanent record. Given the urgency of climate change and the loss of habitat, it is vital that we use new technologies to improve and expand global biodiversity monitoring to thousands of sites around the world. In this article, we describe the acoustical component of the Automated Remote BiodiversityMonitoring Network (ARBIMON), a novel combination of hardware and software for automating data acquisition, data management, and species identification based on audio recordings. The major components of the cyberinfrastructure include: a solar powered remote monitoring station that sends 1-min recordings every 10 min to a base station, which relays the recordings in real-time to the project server, where the recordings are processed and uploaded to the project website (arbimon.net). Along with a module for viewing, listening, and annotating recordings, the website includes a species identification interface to help users create machine learning algorithms to automate species identification. To demonstrate the system we present data on the vocal activity patterns of birds, frogs, insects, and mammals from Puerto Rico and Costa Rica. © 2013 Aide et al.},
+  doi = {10.7717/peerj.103},
+  issn = {21678359},
+  issue = {1},
+  journal = {PeerJ},
+  volume = {2013},
+  year = {2013},
+}
+
+% bioacoustic ai
+@online{BioacousticAi,
+  author = {{Naturalis Biodiversity Center}},
+  title = {BioAcoustic AI},
+  year = 2023,
+  url = {https://bioacousticai.eu/},
+  urldate = {2024-01-30}
+}
+
+% dcase
+@book{DCASE2023Workshop,
+  author = {Fuentes, Magdalena and Heittola, Toni and Imoto, Keisuke and Mesaros, Annamaria and Politis, Archontis and Serizel, Romain and Virtanen, Tuomas},
+  title = {Proceedings of the 8th Workshop on Detection and Classification of Acoustic Scenes and Events (DCASE 2023)},
+  year = {2023},
+  publisher = {Tampere University},
+  isbn = {978-952-03-3171-9},
+  month = {9},
+  address = {Tampere, Finland},
+}
+
+% cow stuff
+@inproceedings{Vidana-Vila2023,
+  author = {Vidaña-Vila, Ester and Malé, Jordi and Freixes, Marc and Solís-Cifré, Mireia and Jiménez, Miquel and Larrondo, Cristian and Guevara, Raúl and Miranda, Joana and Duboc, Leticia and Mainau, Eva and Llonch, Pol and Alsina-Pagès, Rosa Ma},
+  title = {Automatic Detection of Cow Vocalizations Using Convolutional Neural Networks},
+  booktitle = {Proceedings of the 8th Detection and Classification of Acoustic Scenes and Events 2023 Workshop (DCASE2023)},
+  address = {Tampere, Finland},
+  month = {9},
+  year = {2023},
+  pages = {206--210},
+  abstract = {The well-being of animals holds significant importance in our society. Apart from the ethical concerns, recent studies have highlighted the correlation of animal growth, reproductive potential, and overall productivity with animal welfare. In this context, the vocalizations of cows have emerged as a valuable indicator of their well-being for veterinary researchers, but gathering and labelling the vocalizations for their in-depth study is time-consuming and labour-intensive. For this reason, in this work, we present an acoustic event detection algorithm that has been trained and validated with different setups using acoustic data collected from two different farms. The experimental set-up consists of a Convolutional Neural Network followed by a post-processing stage for the detection of vocalizations, so veterinary researchers can easily analyze them. The experimental evaluation assesses the importance of selecting the convenient post-processing and overlapping acoustic window for finding new vocalizations. Furthermore, the study evaluates the significance of using data collected specifically from the same farm for acoustic event detection, as opposed to employing data from a different farm. Results show that by merging training data from different farms, including the farm that is being evaluated, an F1 score of 57.40\% and a recall of 74.05\% can be achieved.},
+}
+
+% bioacoustic roadmap
+@article{Stowell2022,
+  author       = {Dan Stowell},
+  title        = {Computational bioacoustics with deep learning: a review and roadmap},
+  journal      = {CoRR},
+  volume       = {abs/2112.06725},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2112.06725},
+  eprinttype    = {arXiv},
+  eprint       = {2112.06725},
+  timestamp    = {Mon, 03 Jan 2022 15:45:35 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2112-06725.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+}
+
+% birdnet
+@article{Kahl2021,
+  author = {Kahl, Stefan and Wood, Connor M. and Eibl, Maximilian and Klinck, Holger},
+  title = {{BirdNET: A deep learning solution for avian diversity monitoring}},
+  abstract = {Variation in avian diversity in space and time is commonly used as a metric to assess environmental changes. Conventionally, such data were collected by expert observers, but passively collected acoustic data is rapidly emerging as an alternative survey technique. However, efficiently extracting accurate species richness data from large audio datasets has proven challenging. Recent advances in deep artificial neural networks (DNNs) have transformed the field of machine learning, frequently outperforming traditional signal processing techniques in the domain of acoustic event detection and classification. We developed a DNN, called BirdNET, capable of identifying 984 North American and European bird species by sound. Our task-specific model architecture was derived from the family of residual networks (ResNets), consisted of 157 layers with more than 27 million parameters, and was trained using extensive data pre-processing, augmentation, and mixup. We tested the model against three independent datasets: (a) 22,960 single-species recordings; (b) 286 h of fully annotated soundscape data collected by an array of autonomous recording units in a design analogous to what researchers might use to measure avian diversity in a field setting; and (c) 33,670 h of soundscape data from a single high-quality omnidirectional microphone deployed near four eBird hotspots frequented by expert birders. We found that domain-specific data augmentation is key to build models that are robust against high ambient noise levels and can cope with overlapping vocalizations. Task-specific model designs and training regimes for audio event recognition perform on-par with very complex architectures used in other domains (e.g., object detection in images). We also found that high temporal resolution of input spectrograms (short FFT window length) improves the classification performance for bird sounds. In summary, BirdNET achieved a mean average precision of 0.791 for single-species recordings, a F0.5 score of 0.414 for annotated soundscapes, and an average correlation of 0.251 with hotspot observation across 121 species and 4 years of audio data. By enabling the efficient extraction of the vocalizations of many hundreds of bird species from potentially vast amounts of audio data, BirdNET and similar tools have the potential to add tremendous value to existing and future passively collected audio datasets and may transform the field of avian ecology and conservation.},
+  doi = {10.1016/j.ecoinf.2021.101236},
+  issn = {15749541},
+  journal = {Ecological Informatics},
+  volume = {61},
+  year = {2021},
+}
+
+% bioacoustic monitoring
+@article{DeCamargo2019,
+  author = {de Camargo, Ulisses and Roslin, Tomas and Ovaskainen, Otso},
+  title = {{Spatio-temporal scaling of biodiversity in acoustic tropical bird communities}},
+  abstract = {Automated analysis of acoustic communities is a rapidly emerging approach for the characterization and monitoring of biodiversity. To evaluate its utility, we should verify that such ‘bioacoustics' can accurately detect ecological signal in spatiotemporal acoustic data. Targeting the ‘Biological Dynamics of Forest Fragments Project' sites in Brazil, we ask: What is the relative contribution of the spatial, temporal and habitat dimension to variation in bird acoustic communities in a previously fragmented tropical rainforest? Does the functional diversity of bird communities scale similarly to space and time as does species diversity, when both are recorded by bioacoustics means? Overall, is the imprint of landscape fragmentation 30 years ago still audible in the present-day soundscape? We sampled forty-four sites in secondary forest and 107 sites in old-growth forest, resulting in 11 000 h of audio recordings. We detected 60 bird species with satisfactory precision and recovered a linear log–log relation between sampling time and species diversity. Sites in primary forest host more species than sites in secondary forest, but the difference decreased with sampling time, as the slope was slightly higher in secondary than primary forests. Functional diversity, as exposed by vocalizing birds, accumulates faster than does species diversity. The similarity among local communities decreases with distance in both time and space, but stability in time is remarkably high: two acoustic samples from the same site one year (or more) apart prove more similar than two samples taken at the same time but from sites situated just a few hundred meters apart. These findings suggest that habitat modification can be heard as a long-lasting imprint on the soundscape of regenerating habitats and identify soundscape–area and soundscape–time relations as a promising tool for biodiversity research, applied biomonitoring and restoration ecology.},
+  doi = {10.1111/ecog.04544},
+  issn = {16000587},
+  journal = {Ecography},
+  mendeley-groups = {bioacoustic},
+  number = {11},
+  volume = {42},
+  year = {2019},
+}
