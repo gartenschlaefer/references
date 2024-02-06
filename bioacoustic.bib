@@ -1,6 +1,59 @@
 # --
 # bioacoustic reference collections
 
+% animal call
+@article{Towsey2012,
+   author = {Michael Towsey and Birgit Planitz and Alfredo Nantes and Jason Wimmer and Paul Roe},
+   title = {A toolbox for animal call recognition},
+   abstract = {Monitoring the natural environment is increasingly important as habit degradation and climate change reduce the world's biodiversity. We have developed software tools and applications to assist ecologists with the collection and analysis of acoustic data at large spatial and temporal scales. One of our key objectives is automated animal call recognition, and our approach has three novel attributes. First, we work with raw environmental audio, contaminated by noise and artefacts and containing calls that vary greatly in volume depending on the animal's proximity to the microphone. Second, initial experimentation suggested that no single recognizer could deal with the enormous variety of calls. Therefore, we developed a toolbox of generic recognizers to extract invariant features for each call type. Third, many species are cryptic and offer little data with which to train a recognizer. Many popular machine learning methods require large volumes of training and validation data and considerable time and expertise to prepare. Consequently we adopt bootstrap techniques that can be initiated with little data and refined subsequently. In this paper, we describe our recognition tools and present results for real ecological problems. © 2012 Taylor & Francis.},
+   doi = {10.1080/09524622.2011.648753},
+   issn = {09524622},
+   issue = {2},
+   journal = {Bioacoustics},
+   volume = {21},
+   year = {2012},
+}
+
+
+% bird detection, survey
+@inproceedings{Stowell2016,
+  author = {Dan Stowell and Mike Wood and Yannis Stylianou and Herve Glotin},
+  title = {Bird detection in audio: A survey and a challenge},
+  abstract = {Many biological monitoring projects rely on acoustic detection of birds. Despite increasingly large datasets, this detection is often manual or semi-automatic, requiring manual tuning/postprocessing. We review the state of the art in automatic bird sound detection, and identify a widespread need for tuning-free and species-agnostic approaches. We introduce new datasets and an IEEE research challenge to address this need, to make possible the development of fully automatic algorithms for bird sound detection.},
+  doi = {10.1109/MLSP.2016.7738875},
+  issn = {21610371},
+  journal = {IEEE International Workshop on Machine Learning for Signal Processing, MLSP},
+  volume = {2016-November},
+  year = {2016},
+}
+
+
+% density estimation of animals
+@article{Marques2013Eapdupa,
+  author = {Tiago A. Marques and Len Thomas and Stephen W. Martin and David K. Mellinger and Jessica A. Ward and David J. Moretti and Danielle Harris and Peter L. Tyack},
+  title = {Estimating animal population density using passive acoustics},
+  abstract = {Reliable estimation of the size or density of wild animal populations is very important for effective wildlife management, conservation and ecology. Currently, the most widely used methods for obtaining such estimates involve either sighting animals from transect lines or some form of capture-recapture on marked or uniquely identifiable individuals. However, many species are difficult to sight, and cannot be easily marked or recaptured. Some of these species produce readily identifiable sounds, providing an opportunity to use passive acoustic data to estimate animal density. In addition, even for species for which other visually based methods are feasible, passive acoustic methods offer the potential for greater detection ranges in some environments (e.g. underwater or in dense forest), and hence potentially better precision. Automated data collection means that surveys can take place at times and in places where it would be too expensive or dangerous to send human observers. Here, we present an overview of animal density estimation using passive acoustic data, a relatively new and fast-developing field. We review the types of data and methodological approaches currently available to researchers and we provide a framework for acoustics-based density estimation, illustrated with examples from real-world case studies. We mention moving sensor platforms (e.g. towed acoustics), but then focus on methods involving sensors at fixed locations, particularly hydrophones to survey marine mammals, as acoustic-based density estimation research to date has been concentrated in this area. Primary among these are methods based on distance sampling and spatially explicit capture-recapture. The methods are also applicable to other aquatic and terrestrial sound-producing taxa. We conclude that, despite being in its infancy, density estimation based on passive acoustic data likely will become an important method for surveying a number of diverse taxa, such as sea mammals, fish, birds, amphibians, and insects, especially in situations where inferences are required over long periods of time. There is considerable work ahead, with several potentially fruitful research areas, including the development of (i) hardware and software for data acquisition, (ii) efficient, calibrated, automated detection and classification systems, and (iii) statistical approaches optimized for this application. Further, survey design will need to be developed, and research is needed on the acoustic behaviour of target species. Fundamental research on vocalization rates and group sizes, and the relation between these and other factors such as season or behaviour state, is critical. Evaluation of the methods under known density scenarios will be important for empirically validating the approaches presented here. © 2012 Cambridge Philosophical Society.},
+  doi = {10.1111/brv.12001},
+  issn = {14647931},
+  issue = {2},
+  journal = {Biological Reviews},
+  volume = {88},
+  year = {2013},
+}
+
+% soundscape
+@article{Sethi2022Spsoitf,
+  author = {Sarab S. Sethi and Robert M. Ewers and Nick S. Jones and Jani Sleutel and Adi Shabrani and Nursyamin Zulkifli and Lorenzo Picinali},
+  title = {Soundscapes predict species occurrence in tropical forests},
+  abstract = {Accurate occurrence data is necessary for the conservation of keystone or endangered species, but acquiring it is usually slow, laborious and costly. Automated acoustic monitoring offers a scalable alternative to manual surveys but identifying species vocalisations requires large manually annotated training datasets, and is not always possible (e.g. for lesser studied or silent species). A new approach is needed that rapidly predicts species occurrence using smaller and more coarsely labelled audio datasets. We investigated whether local soundscapes could be used to infer the presence of 32 avifaunal and seven herpetofaunal species in 20 min recordings across a tropical forest degradation gradient in Sabah, Malaysia. Using acoustic features derived from a convolutional neural network (CNN), we characterised species indicative soundscapes by training our models on a temporally coarse labelled point-count dataset. Soundscapes successfully predicted the occurrence of 34 out of the 39 species across the two taxonomic groups, with area under the curve (AUC) metrics from 0.53 up to 0.87. The highest accuracies were achieved for species with strong temporal occurrence patterns. Soundscapes were a better predictor of species occurrence than above-ground carbon density – a metric often used to quantify habitat quality across forest degradation gradients. Our results demonstrate that soundscapes can be used to efficiently predict the occurrence of a wide variety of species and provide a new direction for data driven large-scale assessments of habitat suitability.},
+  doi = {10.1111/oik.08525},
+  issn = {16000706},
+  issue = {3},
+  journal = {Oikos},
+  volume = {2022},
+  year = {2022},
+}
+
 % schlüter, bird
 @inproceedings{Schlter2018BirdIF,
   author={Jan Schl{\"u}ter},
