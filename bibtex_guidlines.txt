@@ -1,0 +1,40 @@
+# --
+# guidlines for bibtex citations
+# from: https://bibtex.eu/types/
+
+# --
+# inproceedings
+
+The "inproceedings" BibTeX type requires the following fields:
+  author: The author(s) of the paper.
+  title: The title of the paper.
+  booktitle: The title of the conference proceedings.
+  year: The year the conference proceedings were published.
+
+Optional Fields:
+  editor: The name(s) of the editor(s) of the conference proceedings.
+  volume: The volume number of the conference proceedings, if applicable.
+  number: The issue number of the conference proceedings, if applicable.
+  series: The name of the series that the conference proceedings belong to, if applicable.
+  pages: The pages on which the paper appears in the conference proceedings.
+  address: The location of the conference.
+  month: The month the conference was held.
+  organization: The organization that sponsored the conference.
+  publisher: The name of the publisher of the conference proceedings.
+
+Example:
+@inproceedings{mypaper,
+  title        = {An Analysis of Example},
+  author       = {John Smith and Jane Doe},
+  year         = 2022,
+  month        = {June},
+  booktitle    = {Proceedings of the International Conference on Example},
+  publisher    = {ACM Press},
+  address      = {New York, NY},
+  series       = {Example Conference Proceedings},
+  volume       = 1,
+  number       = 2,
+  pages        = {123--130},
+  editor       = {David Brown and Susan Green},
+  organization = {ACM}
+}
