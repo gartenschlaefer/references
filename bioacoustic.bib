@@ -1,16 +1,72 @@
 # --
 # bioacoustic reference collections
 
+% poultry bioacoustic, veterinary
+@article{Mahdavian2020PoultryCalls,
+  author = {Alireza Mahdavian and Saeid Minaei and Ce Yang and Farshad Almasganj and Shaban Rahimi and Peter M. Marchetto},
+  title = {Ability evaluation of a voice activity detection algorithm in bioacoustics: A case study on poultry calls},
+  journal = {Computers and Electronics in Agriculture},
+  volume = {168},
+  pages = {105100},
+  year = {2020},
+  %issn = {0168-1699},
+  %doi = {https://doi.org/10.1016/j.compag.2019.105100},
+  %url = {https://www.sciencedirect.com/science/article/pii/S0168169918305982},
+  %keywords = {Bioacoustics, Health monitoring, Respiratory diseases, Audio features, },
+  %abstract = {Poultry is one of the most strategic source of human foods. There have been seen some hopeful signs of bioacoustics application to monitor the health condition of this vital food source. One of the obstacles is that the bird’s call is combined with some unvoiced sounds and extracting the calls is not easy, especially when the bird is sick. This research is a report on successful application of some of the features involved in extracting healthy and non-healthy birds’ calls from their sound signals. One hundred and twenty birds from two genotypes – Ross and Cobb – were placed in two groups, a control and those challenged with respiratory diseases. They were reared and their sound was recorded daily. The vocal phrases of the recorded audio signals were extracted using the presented algorithm. Results of analysis showed that an increase in age and onset of illness are two factors that cause an error increase. Detection accuracy was calculated at 95% for healthy young birds and 72% for non-healthy birds. A significant part of this error is due to misclassing the calls as non-vocal segments. This meant that 97% of the activities classified as vocal phrases were, in fact, vocal. These results showed that the idea of such an easy-to-implement algorithm could potentially be employed for the coarselevel segmentation of some animal vocalization signals with reliable outputs, which is an essential and primary step in bioacoustics research.},
+}
+
+% contrastive
+@inproceedings{Moummad2023CL,
+  author={Ilyass Moummad and Romain Serizel and Nicolas Farrugia},
+  title={Pretraining Representations for Bioacoustic Few-shot Detection using Supervised Contrastive Learning}, 
+  booktitle = {Proceedings of the 8th Detection and Classification of Acoustic Scenes and Events 2023 Workshop (DCASE2023)},
+  month = {9},
+  year={2023},
+  pages = {126--130},
+  %abstract = {Deep learning has been widely used recently for sound event detection and classification. Its success is linked to the availability of sufficiently large datasets, possibly with corresponding annotations when supervised learning is considered. In bioacoustic applications, most tasks come with few labelled training data, because annotating long recordings is time consuming and costly. Therefore supervised learning is not the best suited approach to solve bioacoustic tasks. The bioacoustic community recasted the problem of sound event detection within the framework of few-shot learning, i.e. training a system with only few labeled examples. The few-shot bioacoustic sound event detection task in the DCASE challenge focuses on detecting events in long audio recordings given only five annotated examples for each class of interest. In this paper, we show that learning a rich feature extractor from scratch can be achieved by leveraging data augmentation using a supervised contrastive learning framework. We highlight the ability of this framework to transfer well for five-shot event detection on previously unseen classes in the training data. We obtain an F-score of 63.46% on the validation set and 42.7% on the test set, ranking second in the DCASE challenge. We provide an ablation study for the critical choices of data augmentation techniques as well as for the learning strategy applied on the training set. Our code is available on Github.},
+  %eprint={2309.00878},
+  %archivePrefix={arXiv},
+  %primaryClass={cs.SD},
+}
+
+% cow stuff
+@inproceedings{Vidana-Vila2023,
+  author = {Vidaña-Vila, Ester and Malé, Jordi and Freixes, Marc and Solís-Cifré, Mireia and Jiménez, Miquel and Larrondo, Cristian and Guevara, Raúl and Miranda, Joana and Duboc, Leticia and Mainau, Eva and Llonch, Pol and Alsina-Pagès, Rosa Ma},
+  title = {Automatic Detection of Cow Vocalizations Using Convolutional Neural Networks},
+  booktitle = {Proceedings of the 8th Detection and Classification of Acoustic Scenes and Events 2023 Workshop (DCASE2023)},
+  month = {9},
+  year = {2023},
+  pages = {206--210},
+  %address = {Tampere, Finland},
+  %abstract = {The well-being of animals holds significant importance in our society. Apart from the ethical concerns, recent studies have highlighted the correlation of animal growth, reproductive potential, and overall productivity with animal welfare. In this context, the vocalizations of cows have emerged as a valuable indicator of their well-being for veterinary researchers, but gathering and labelling the vocalizations for their in-depth study is time-consuming and labour-intensive. For this reason, in this work, we present an acoustic event detection algorithm that has been trained and validated with different setups using acoustic data collected from two different farms. The experimental set-up consists of a Convolutional Neural Network followed by a post-processing stage for the detection of vocalizations, so veterinary researchers can easily analyze them. The experimental evaluation assesses the importance of selecting the convenient post-processing and overlapping acoustic window for finding new vocalizations. Furthermore, the study evaluates the significance of using data collected specifically from the same farm for acoustic event detection, as opposed to employing data from a different farm. Results show that by merging training data from different farms, including the farm that is being evaluated, an F1 score of 57.40\% and a recall of 74.05\% can be achieved.},
+}
+
+% fewshot learning, dcase
+@article{Nolasco2023,
+  author = {Ines Nolasco and Shubhr Singh and Veronica Morfi and Vincent Lostanlen and Ariana Strandburg-Peshkin and Ester Vidaña-Vila and Lisa Gill and Hanna Pamuła and Helen Whitehead and Ivan Kiskin and Frants H. Jensen and Joe Morford and Michael G. Emmerson and Elisabetta Versace and Emily Grout and Haohe Liu and Burooj Ghani and Dan Stowell},
+  title = {Learning to detect an animal sound from five examples},
+  journal = {Ecological Informatics},
+  volume = {77},
+  pages = {102258},
+  year = {2023},
+  issn = {1574-9541},
+  %doi = {https://doi.org/10.1016/j.ecoinf.2023.102258},
+  %url = {https://www.sciencedirect.com/science/article/pii/S157495412300287X},
+  %keywords = {Bioacoustics, Deep learning, Event detection, Few-shot learning},
+  %abstract = {Automatic detection and classification of animal sounds has many applications in biodiversity monitoring and animal behavior. In the past twenty years, the volume of digitised wildlife sound available has massively increased, and automatic classification through deep learning now shows strong results. However, bioacoustics is not a single task but a vast range of small-scale tasks (such as individual ID, call type, emotional indication) with wide variety in data characteristics, and most bioacoustic tasks do not come with strongly-labelled training data. The standard paradigm of supervised learning, focussed on a single large-scale dataset and/or a generic pre-trained algorithm, is insufficient. In this work we recast bioacoustic sound event detection within the AI framework of few-shot learning. We adapt this framework to sound event detection, such that a system can be given the annotated start/end times of as few as 5 events, and can then detect events in long-duration audio—even when the sound category was not known at the time of algorithm training. We introduce a collection of open datasets designed to strongly test a system's ability to perform few-shot sound event detections, and we present the results of a public contest to address the task. Our analysis shows that prototypical networks are a very common used strategy and they perform well when enhanced with adaptations for general characteristics of animal sounds. However, systems with high time resolution capabilities perform the best in this challenge. We demonstrate that widely-varying sound event durations are an important factor in performance, as well as non-stationarity, i.e. gradual changes in conditions throughout the duration of a recording. For fine-grained bioacoustic recognition tasks without massive annotated training data, our analysis demonstrate that few-shot sound event detection is a powerful new method, strongly outperforming traditional signal-processing detection methods in the fully automated scenario.}
+}
+
 % conservation
 @article{Teixeira2019Bmoavbfc,
   author = {Daniella Teixeira and Martine Maron and Berndt J. van Rensburg},
   title = {Bioacoustic monitoring of animal vocal behavior for conservation},
-  %doi = {10.1111/csp2.72},
-  %issn = {25784854},
   issue = {8},
   journal = {Conservation Science and Practice},
   volume = {1},
   year = {2019},
+  %doi = {10.1111/csp2.72},
+  %issn = {25784854},
   %abstract = {The popularity of bioacoustics for threatened species monitoring has surged. Large volumes of acoustic data can be collected autonomously and remotely with minimal human effort. The approach is commonly used to detect cryptic species and, more recently, to estimate abundance or density. However, the potential for conservation-relevant information to be derived from acoustic signatures associated with particular behavior is less well-exploited. Animal vocal behavior can reveal important information about critical life history events. In this study, we argue that the overlap of the disciplines of bioacoustics, vocal communication, and conservation behavior—thus, “acoustic conservation behavior”—has much to offer threatened species monitoring. In particular, vocalizations can serve as indicators of behavioral states and contexts that provide insight into populations as it relates to their conservation. We explore the information available from monitoring species' vocalizations that relate to reproduction and recruitment, alarm and defense, and social behavior, and how this information could translate into potential conservation benefits. While there are still challenges to processing acoustic data, we conclude that acoustic conservation behavior may improve threatened species monitoring where vocalizations reveal behaviors that are informative for management and decision-making.},
 }
 
@@ -25,13 +81,13 @@
   %issn = {0168-1699},
   %doi = {https://doi.org/10.1016/j.compag.2023.107760},
   %url = {https://www.sciencedirect.com/science/article/pii/S0168169923001485},
-  keywords = {Cow, Acoustic, Machine learning, Neural network, Vocalization, Livestock},
+  %keywords = {Cow, Acoustic, Machine learning, Neural network, Vocalization, Livestock},
   %abstract = {Acoustic technologies provide a non-invasive method to generate information about cow vocalization. This study demonstrated that collar attached acoustic sensors can differentiate between cow vocalization and background sounds obtained from cows under grazing conditions. The overall accuracy of the vocalization classification model was 99.5% in the test dataset, based on a total of 709 vocalization recordings from 10 cows. Vocalization samples were obtained from 10 trial cows, with a frequency that ranged from 3 to 452 vocalizations per cow. Algorithms were also developed to differentiate between three different cow vocalization classes (Open mouth, Closed mouth, Mixed mouth (Closed mouth followed by Open mouth)), with a model accuracy of 85% in the test dataset. Most cows demonstrated all three types of vocalization, and the between-cow variability in the probability of mixed vocalization per vocalization had a standard deviation of 0.13 relative an average probability of 0.74. The duration of the 709 individual vocalizations ranged from 0.88 to 3.37 s, with an average of 1.76 s and a standard deviation of 0.36 s. There was a between-cow variation in the duration of vocalization, with a standard deviation of 0.12 ± 0.04 s (P < 0.01). The performance of the model for the duration of vocalization had a coefficient of determination of R2 = 0.84 in the test dataset. Models to predict the proportion of a vocalization that is a closed vocalization had a coefficient of determination of R2 = 0.72 in the test dataset. The proportion of a mixed vocalization that is a closed vocalization ranged from 0.04 to 0.92 and had an average of 0.38 and a standard deviation of 0.15. There was also between-cow variation in the proportion of a mixed vocalization that is a closed vocalization, with a standard deviation of 0.08 ± 0.023 (P < 0.01). The mixed vocalization had an acoustic spectral and temporal pattern that was unique to the cow that generated the vocalization, and classification models for voice recognition had an accuracy of 80% in the test dataset. A prototype spectral unmixing algorithm was also developed to use the ensemble of cow-collar acoustic recordings from each cow to assign each cow vocalization to the cow that generated the vocalization. This study demonstrated that there is significant between-cow variability in cow vocalization traits, and that these traits can be determined using cow-attached acoustic sensors to provide information on the welfare and state of the animal.},
 }
 
 % animal welfare, vocalization
 @article{Manteuffel2004Vofa,
-  author = {Gerhard Manteuffel and Birger Puppe and Peter C Schön},
+  author = {Gerhard Manteuffel and Birger Puppe and Peter C Sch{\"o}n},
   title = {Vocalization of farm animals as a measure of welfare},
   journal = {Applied Animal Behaviour Science},
   volume = {88},
@@ -49,39 +105,39 @@
 @misc{Mcloughlin2019,
   author = {Michael P. Mcloughlin and Rebecca Stewart and Alan G. McElligott},
   title = {Automated bioacoustics: Methods in ecology and conservation and their potential for animal welfare monitoring},
-  abstract = {Vocalizations carry emotional, physiological and individual information. This suggests that they may serve as potentially useful indicators for inferring animal welfare. At the same time, automated methods for analysing and classifying sound have developed rapidly, particularly in the fields of ecology, conservation and sound scene classification. These methods are already used to automatically classify animal vocalizations, for example, in identifying animal species and estimating numbers of individuals. Despite this potential, they have not yet found widespread application in animal welfare monitoring. In this review, we first discuss current trends in sound analysis for ecology, conservation and sound classification. Following this, we detail the vocalizations produced by three of the most important farm livestock species: chickens (Gallus gallus domesticus), pigs (Sus scrofa domesticus) and cattle (Bos taurus). Finally, we describe how these methods can be applied to monitor animal welfare with new potential for developing automated methods for large-scale farming.},
-  %doi = {10.1098/rsif.2019.0225},
-  %issn = {17425662},
   issue = {155},
   journal = {Journal of the Royal Society Interface},
   volume = {16},
   year = {2019},
+  %abstract = {Vocalizations carry emotional, physiological and individual information. This suggests that they may serve as potentially useful indicators for inferring animal welfare. At the same time, automated methods for analysing and classifying sound have developed rapidly, particularly in the fields of ecology, conservation and sound scene classification. These methods are already used to automatically classify animal vocalizations, for example, in identifying animal species and estimating numbers of individuals. Despite this potential, they have not yet found widespread application in animal welfare monitoring. In this review, we first discuss current trends in sound analysis for ecology, conservation and sound classification. Following this, we detail the vocalizations produced by three of the most important farm livestock species: chickens (Gallus gallus domesticus), pigs (Sus scrofa domesticus) and cattle (Bos taurus). Finally, we describe how these methods can be applied to monitor animal welfare with new potential for developing automated methods for large-scale farming.},
+  %doi = {10.1098/rsif.2019.0225},
+  %issn = {17425662},
 }
 
 % soundscape ecology
-@article{Pijanowski2011,
-   author = {Bryan C. Pijanowski and Luis J. Villanueva-Rivera and Sarah L. Dumyahn and Almo Farina and Bernie L. Krause and Brian M. Napoletano and Stuart H. Gage and Nadia Pieretti},
-   title = {Soundscape ecology: The science of sound in the landscape},
-   abstract = {This article presents a unifying theory of soundscape ecology, which brings the idea of the soundscape the collection of sounds that emanate from landscapesinto a research and application focus. Our conceptual framework of soundscape ecology is based on the causes and consequences of biological (biophony), geophysical (geophony), and human-produced (anthrophony) sounds. We argue that soundscape ecology shares many parallels with landscape ecology, and it should therefore be considered a branch of this maturing field. We propose a research agenda for soundscape ecology that includes six areas: (1) measurement and analytical challenges, (2) spatial-temporal dynamics, (3) soundscape linkage to environmental covariates, (4) human impacts on the soundscape, (5) soundscape impacts on humans, and (6) soundscape impacts on ecosystems. We present case studies that illustrate different approaches to understanding soundscape dynamics. Because soundscapes are our auditory link to nature, we also argue for their protection, using the knowledge of how sounds are produced by the environment and humans. © 2011 by American Institute of Biological Sciences. All rights reserved.},
-   doi = {10.1525/bio.2011.61.3.6},
-   issn = {00063568},
-   issue = {3},
-   journal = {BioScience},
-   volume = {61},
-   year = {2011},
+@article{Pijanowski2011SoundscapeEcology,
+  author = {Bryan C. Pijanowski and Luis J. Villanueva-Rivera and Sarah L. Dumyahn and Almo Farina and Bernie L. Krause and Brian M. Napoletano and Stuart H. Gage and Nadia Pieretti},
+  title = {Soundscape ecology: The science of sound in the landscape},
+  issue = {3},
+  journal = {BioScience},
+  volume = {61},
+  year = {2011},
+  %abstract = {This article presents a unifying theory of soundscape ecology, which brings the idea of the soundscape the collection of sounds that emanate from landscapesinto a research and application focus. Our conceptual framework of soundscape ecology is based on the causes and consequences of biological (biophony), geophysical (geophony), and human-produced (anthrophony) sounds. We argue that soundscape ecology shares many parallels with landscape ecology, and it should therefore be considered a branch of this maturing field. We propose a research agenda for soundscape ecology that includes six areas: (1) measurement and analytical challenges, (2) spatial-temporal dynamics, (3) soundscape linkage to environmental covariates, (4) human impacts on the soundscape, (5) soundscape impacts on humans, and (6) soundscape impacts on ecosystems. We present case studies that illustrate different approaches to understanding soundscape dynamics. Because soundscapes are our auditory link to nature, we also argue for their protection, using the knowledge of how sounds are produced by the environment and humans. © 2011 by American Institute of Biological Sciences. All rights reserved.},
+  %doi = {10.1525/bio.2011.61.3.6},
+  %issn = {00063568},
 }
 
 % animal call
 @article{Towsey2012,
-   author = {Michael Towsey and Birgit Planitz and Alfredo Nantes and Jason Wimmer and Paul Roe},
-   title = {A toolbox for animal call recognition},
-   abstract = {Monitoring the natural environment is increasingly important as habit degradation and climate change reduce the world's biodiversity. We have developed software tools and applications to assist ecologists with the collection and analysis of acoustic data at large spatial and temporal scales. One of our key objectives is automated animal call recognition, and our approach has three novel attributes. First, we work with raw environmental audio, contaminated by noise and artefacts and containing calls that vary greatly in volume depending on the animal's proximity to the microphone. Second, initial experimentation suggested that no single recognizer could deal with the enormous variety of calls. Therefore, we developed a toolbox of generic recognizers to extract invariant features for each call type. Third, many species are cryptic and offer little data with which to train a recognizer. Many popular machine learning methods require large volumes of training and validation data and considerable time and expertise to prepare. Consequently we adopt bootstrap techniques that can be initiated with little data and refined subsequently. In this paper, we describe our recognition tools and present results for real ecological problems. © 2012 Taylor & Francis.},
-   doi = {10.1080/09524622.2011.648753},
-   issn = {09524622},
-   issue = {2},
-   journal = {Bioacoustics},
-   volume = {21},
-   year = {2012},
+  author = {Michael Towsey and Birgit Planitz and Alfredo Nantes and Jason Wimmer and Paul Roe},
+  title = {A toolbox for animal call recognition},
+  issue = {2},
+  journal = {Bioacoustics},
+  volume = {21},
+  year = {2012},
+  %doi = {10.1080/09524622.2011.648753},
+  %issn = {09524622},
+  %abstract = {Monitoring the natural environment is increasingly important as habit degradation and climate change reduce the world's biodiversity. We have developed software tools and applications to assist ecologists with the collection and analysis of acoustic data at large spatial and temporal scales. One of our key objectives is automated animal call recognition, and our approach has three novel attributes. First, we work with raw environmental audio, contaminated by noise and artefacts and containing calls that vary greatly in volume depending on the animal's proximity to the microphone. Second, initial experimentation suggested that no single recognizer could deal with the enormous variety of calls. Therefore, we developed a toolbox of generic recognizers to extract invariant features for each call type. Third, many species are cryptic and offer little data with which to train a recognizer. Many popular machine learning methods require large volumes of training and validation data and considerable time and expertise to prepare. Consequently we adopt bootstrap techniques that can be initiated with little data and refined subsequently. In this paper, we describe our recognition tools and present results for real ecological problems. © 2012 Taylor & Francis.},
 }
 
 
@@ -89,12 +145,12 @@
 @inproceedings{Stowell2016Bdia,
   author = {Dan Stowell and Mike Wood and Yannis Stylianou and Herve Glotin},
   title = {Bird detection in audio: A survey and a challenge},
-  abstract = {Many biological monitoring projects rely on acoustic detection of birds. Despite increasingly large datasets, this detection is often manual or semi-automatic, requiring manual tuning/postprocessing. We review the state of the art in automatic bird sound detection, and identify a widespread need for tuning-free and species-agnostic approaches. We introduce new datasets and an IEEE research challenge to address this need, to make possible the development of fully automatic algorithms for bird sound detection.},
-  %doi = {10.1109/MLSP.2016.7738875},
-  %issn = {21610371},
   booktitle = {IEEE International Workshop on Machine Learning for Signal Processing, MLSP},
   volume = {2016-November},
   year = {2016},
+  %abstract = {Many biological monitoring projects rely on acoustic detection of birds. Despite increasingly large datasets, this detection is often manual or semi-automatic, requiring manual tuning/postprocessing. We review the state of the art in automatic bird sound detection, and identify a widespread need for tuning-free and species-agnostic approaches. We introduce new datasets and an IEEE research challenge to address this need, to make possible the development of fully automatic algorithms for bird sound detection.},
+  %doi = {10.1109/MLSP.2016.7738875},
+  %issn = {21610371},
 }
 
 
@@ -102,26 +158,42 @@
 @article{Marques2013Eapdupa,
   author = {Tiago A. Marques and Len Thomas and Stephen W. Martin and David K. Mellinger and Jessica A. Ward and David J. Moretti and Danielle Harris and Peter L. Tyack},
   title = {Estimating animal population density using passive acoustics},
-  abstract = {Reliable estimation of the size or density of wild animal populations is very important for effective wildlife management, conservation and ecology. Currently, the most widely used methods for obtaining such estimates involve either sighting animals from transect lines or some form of capture-recapture on marked or uniquely identifiable individuals. However, many species are difficult to sight, and cannot be easily marked or recaptured. Some of these species produce readily identifiable sounds, providing an opportunity to use passive acoustic data to estimate animal density. In addition, even for species for which other visually based methods are feasible, passive acoustic methods offer the potential for greater detection ranges in some environments (e.g. underwater or in dense forest), and hence potentially better precision. Automated data collection means that surveys can take place at times and in places where it would be too expensive or dangerous to send human observers. Here, we present an overview of animal density estimation using passive acoustic data, a relatively new and fast-developing field. We review the types of data and methodological approaches currently available to researchers and we provide a framework for acoustics-based density estimation, illustrated with examples from real-world case studies. We mention moving sensor platforms (e.g. towed acoustics), but then focus on methods involving sensors at fixed locations, particularly hydrophones to survey marine mammals, as acoustic-based density estimation research to date has been concentrated in this area. Primary among these are methods based on distance sampling and spatially explicit capture-recapture. The methods are also applicable to other aquatic and terrestrial sound-producing taxa. We conclude that, despite being in its infancy, density estimation based on passive acoustic data likely will become an important method for surveying a number of diverse taxa, such as sea mammals, fish, birds, amphibians, and insects, especially in situations where inferences are required over long periods of time. There is considerable work ahead, with several potentially fruitful research areas, including the development of (i) hardware and software for data acquisition, (ii) efficient, calibrated, automated detection and classification systems, and (iii) statistical approaches optimized for this application. Further, survey design will need to be developed, and research is needed on the acoustic behaviour of target species. Fundamental research on vocalization rates and group sizes, and the relation between these and other factors such as season or behaviour state, is critical. Evaluation of the methods under known density scenarios will be important for empirically validating the approaches presented here. © 2012 Cambridge Philosophical Society.},
-  doi = {10.1111/brv.12001},
-  issn = {14647931},
   issue = {2},
   journal = {Biological Reviews},
   volume = {88},
   year = {2013},
+  %doi = {10.1111/brv.12001},
+  %issn = {14647931},
+  %abstract = {Reliable estimation of the size or density of wild animal populations is very important for effective wildlife management, conservation and ecology. Currently, the most widely used methods for obtaining such estimates involve either sighting animals from transect lines or some form of capture-recapture on marked or uniquely identifiable individuals. However, many species are difficult to sight, and cannot be easily marked or recaptured. Some of these species produce readily identifiable sounds, providing an opportunity to use passive acoustic data to estimate animal density. In addition, even for species for which other visually based methods are feasible, passive acoustic methods offer the potential for greater detection ranges in some environments (e.g. underwater or in dense forest), and hence potentially better precision. Automated data collection means that surveys can take place at times and in places where it would be too expensive or dangerous to send human observers. Here, we present an overview of animal density estimation using passive acoustic data, a relatively new and fast-developing field. We review the types of data and methodological approaches currently available to researchers and we provide a framework for acoustics-based density estimation, illustrated with examples from real-world case studies. We mention moving sensor platforms (e.g. towed acoustics), but then focus on methods involving sensors at fixed locations, particularly hydrophones to survey marine mammals, as acoustic-based density estimation research to date has been concentrated in this area. Primary among these are methods based on distance sampling and spatially explicit capture-recapture. The methods are also applicable to other aquatic and terrestrial sound-producing taxa. We conclude that, despite being in its infancy, density estimation based on passive acoustic data likely will become an important method for surveying a number of diverse taxa, such as sea mammals, fish, birds, amphibians, and insects, especially in situations where inferences are required over long periods of time. There is considerable work ahead, with several potentially fruitful research areas, including the development of (i) hardware and software for data acquisition, (ii) efficient, calibrated, automated detection and classification systems, and (iii) statistical approaches optimized for this application. Further, survey design will need to be developed, and research is needed on the acoustic behaviour of target species. Fundamental research on vocalization rates and group sizes, and the relation between these and other factors such as season or behaviour state, is critical. Evaluation of the methods under known density scenarios will be important for empirically validating the approaches presented here. © 2012 Cambridge Philosophical Society.},
 }
 
 % soundscape
 @article{Sethi2022Spsoitf,
   author = {Sarab S. Sethi and Robert M. Ewers and Nick S. Jones and Jani Sleutel and Adi Shabrani and Nursyamin Zulkifli and Lorenzo Picinali},
   title = {Soundscapes predict species occurrence in tropical forests},
-  abstract = {Accurate occurrence data is necessary for the conservation of keystone or endangered species, but acquiring it is usually slow, laborious and costly. Automated acoustic monitoring offers a scalable alternative to manual surveys but identifying species vocalisations requires large manually annotated training datasets, and is not always possible (e.g. for lesser studied or silent species). A new approach is needed that rapidly predicts species occurrence using smaller and more coarsely labelled audio datasets. We investigated whether local soundscapes could be used to infer the presence of 32 avifaunal and seven herpetofaunal species in 20 min recordings across a tropical forest degradation gradient in Sabah, Malaysia. Using acoustic features derived from a convolutional neural network (CNN), we characterised species indicative soundscapes by training our models on a temporally coarse labelled point-count dataset. Soundscapes successfully predicted the occurrence of 34 out of the 39 species across the two taxonomic groups, with area under the curve (AUC) metrics from 0.53 up to 0.87. The highest accuracies were achieved for species with strong temporal occurrence patterns. Soundscapes were a better predictor of species occurrence than above-ground carbon density – a metric often used to quantify habitat quality across forest degradation gradients. Our results demonstrate that soundscapes can be used to efficiently predict the occurrence of a wide variety of species and provide a new direction for data driven large-scale assessments of habitat suitability.},
-  doi = {10.1111/oik.08525},
-  issn = {16000706},
-  issue = {3},
   journal = {Oikos},
   volume = {2022},
   year = {2022},
+  issue = {3},
+  %doi = {10.1111/oik.08525},
+  %issn = {16000706},
+  %abstract = {Accurate occurrence data is necessary for the conservation of keystone or endangered species, but acquiring it is usually slow, laborious and costly. Automated acoustic monitoring offers a scalable alternative to manual surveys but identifying species vocalisations requires large manually annotated training datasets, and is not always possible (e.g. for lesser studied or silent species). A new approach is needed that rapidly predicts species occurrence using smaller and more coarsely labelled audio datasets. We investigated whether local soundscapes could be used to infer the presence of 32 avifaunal and seven herpetofaunal species in 20 min recordings across a tropical forest degradation gradient in Sabah, Malaysia. Using acoustic features derived from a convolutional neural network (CNN), we characterised species indicative soundscapes by training our models on a temporally coarse labelled point-count dataset. Soundscapes successfully predicted the occurrence of 34 out of the 39 species across the two taxonomic groups, with area under the curve (AUC) metrics from 0.53 up to 0.87. The highest accuracies were achieved for species with strong temporal occurrence patterns. Soundscapes were a better predictor of species occurrence than above-ground carbon density – a metric often used to quantify habitat quality across forest degradation gradients. Our results demonstrate that soundscapes can be used to efficiently predict the occurrence of a wide variety of species and provide a new direction for data driven large-scale assessments of habitat suitability.},
+}
+
+% monitoring network,
+@article{Sethi2020SA,
+  author = {Sethi, Sarab S. and Ewers, Robert M. and Jones, Nick S. and Signorelli, Aaron and Picinali, Lorenzo and Orme, Christopher David L.},
+  title = {SAFE Acoustics: An open-source, real-time eco-acoustic monitoring network in the tropical rainforests of Borneo},
+  journal = {Methods in Ecology and Evolution},
+  volume = {11},
+  number = {10},
+  pages = {1182-1185},
+  year = {2020},
+  %keywords = {applied ecology, bioinformatics, community ecology, conservation, monitoring (community ecology), monitoring (population ecology), software, surveys},
+  %doi = {https://doi.org/10.1111/2041-210X.13438},
+  %url = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13438},
+  %eprint = {https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.13438},
+  %abstract = {Abstract Automated monitoring approaches offer an avenue to unlocking large-scale insight into how ecosystems respond to human pressures. However, since data collection and data analyses are often treated independently, there are currently no open-source examples of end-to-end, real-time ecological monitoring networks. Here, we present the complete implementation of an autonomous acoustic monitoring network deployed in the tropical rainforests of Borneo. Real-time audio is uploaded remotely from the field, indexed by a central database, and delivered via an API to a public-facing website. We provide the open-source code and design of our monitoring devices, the central web2py database, and the ReactJS website. Furthermore, we demonstrate an extension of this infrastructure to deliver real-time analyses of the eco-acoustic data. By detailing a fully functional, open source, and extensively tested design, our work will accelerate the rate at which fully autonomous monitoring networks mature from technological curiosities, and towards genuinely impactful tools in ecology.},
 }
 
 % schlüter, bird
