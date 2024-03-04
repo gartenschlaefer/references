@@ -1,6 +1,115 @@
 # --
 # bioacoustic reference collections
 
+% bird, deep learning
+@article{Xie2023Bird,
+  AUTHOR = {Xie, Jie and Zhu, Mingying},
+  TITLE = {Acoustic Classification of Bird Species Using an Early Fusion of Deep Features},
+  JOURNAL = {Birds},
+  VOLUME = {4},
+  YEAR = {2023},
+  NUMBER = {1},
+  PAGES = {138--147},
+  %URL = {https://www.mdpi.com/2673-6004/4/1/11},
+  %ISSN = {2673-6004},
+  %ABSTRACT = {Bird sound classification plays an important role in large-scale temporal and spatial environmental monitoring. In this paper, we investigate both transfer learning and training from scratch for bird sound classification, where pre-trained models are used as feature extractors. Specifically, deep cascade features are extracted from various layers of different pre-trained models, which are then fused to classify bird sounds. A multi-view spectrogram is constructed to characterize bird sounds by simply repeating the spectrogram to make it suitable for pre-trained models. Furthermore, both mixup and pitch shift are applied for augmenting bird sounds to improve the classification performance. Experimental classification on 43 bird species using linear SVM indicates that deep cascade features can achieve the highest balanced accuracy of 90.94% ± 1.53%. To further improve the classification performance, an early fusion method is used by combining deep cascaded features extracted from different pre-trained models. The final best classification balanced accuracy is 94.89% ± 1.35%.},
+  %DOI = {10.3390/birds4010011},
+}
+
+
+% calve coughs
+@article{Vandermeulen2016CalveCough,
+  author = {Joris Vandermeulen and Claudia Bahr and Dayle Johnston and Bernadette Earley and Emanuela Tullo and Ilaria Fontana and Marcella Guarino and Vasileios Exadaktylos and Daniel Berckmans},
+  title = {Early recognition of bovine respiratory disease in calves using automated continuous monitoring of cough sounds},
+  journal = {Computers and Electronics in Agriculture},
+  volume = {129},
+  pages = {15-26},
+  year = {2016},
+  %issn = {0168-1699},
+  %doi = {https://doi.org/10.1016/j.compag.2016.07.014},
+  %url = {https://www.sciencedirect.com/science/article/pii/S0168169916305105},
+  %keywords = {Disease monitoring, Sound analysis, Bioacoustics, Non-invasive technology},
+  %abstract = {Bovine respiratory disease (BRD) complex in calves impairs health and welfare and causes severe economic losses for the Stockperson. Early recognition of BRD should lead to earlier veterinary (antibiotic/anti-inflammatory) treatment interventions thereby reducing the severity of the disease and associated costs. Coughing is one of the clinical manifestations of BRD. It is believed that by automatically and continuously monitoring the sounds within calf houses, and analysing the coughing frequency, early recognition of BRD in calves is possible. Therefore, the objective of the present study was to develop an automated calf cough monitor and examine its potential as an early warning system for BRD in artificially reared dairy calves. The coughing sounds of 62 calves were continuously recorded by a microphone over a three-month period. A sound analysis algorithm was developed to distinguish calf coughs from other sounds (e.g. mechanical sounds). During the sound recording period the health of the calves was assessed and scored periodically per week by a trained human observer. Calves presenting with BRD received antibiotic and/or anti-inflammatory treatment and the dates of treatment were recorded. This treatment date reference served as a comparison for the investigation of whether an increase in coughing frequency could be related to calves developing BRD. The calf cough detection algorithm achieved 50.3% sensitivity, 99.2% specificity and 87.5% precision. Four out of five periods, where coughing frequency was observed to be increased, coincided with the development of BRD in more than one calf. This period of increased coughing frequency was always observed before the calves were treated. Therefore, the calf cough monitor has the potential to identify early onset of BRD in calves.},
+}
+
+% pig coughs
+@article{Exadaktylos2008PigCough,
+  author = {V. Exadaktylos and M. Silva and J.-M. Aerts and C.J. Taylor and D. Berckmans},
+  title = {Real-time recognition of sick pig cough sounds},
+  journal = {Computers and Electronics in Agriculture},
+  volume = {63},
+  number = {2},
+  pages = {207-214},
+  year = {2008},
+  %issn = {0168-1699},
+  %doi = {https://doi.org/10.1016/j.compag.2008.02.010},
+  %url = {https://www.sciencedirect.com/science/article/pii/S0168169908000835},
+  %keywords = {Real-time recognition, Cough analysis, Pig vocalisations, Biomedical system, Spectral analysis},
+  %abstract = {This paper extends existing cough identification methods and proposes a real-time method for identifying sick pig cough sounds. The analysis and classification is based on the frequency domain characteristics of the signal, while an improved procedure to extract the reference is presented. This technique evaluates fuzzy c-means clustering to parts of the training signals and provides a frequency content reference that mirrors the characteristics of sick pig cough. The extraction of the reference is performed in such a way that allows for the identification process to be implemented in real-time applications that would speed up the diagnosis and treatment process and improve animal welfare in pig houses. Preliminary results for the evaluation of the algorithm are based on individual sounds of healthy and sick animals acquired in laboratory conditions. An 85% overall correct classification ratio is achieved with 82% of the sick cough sounds being correctly identified.},
+}
+
+% individual, identification
+@article{Stowell2019Individuals,
+  author = {Stowell, Dan  and Petrusková, Tereza  and Šálek, Martin  and Linhart, Pavel },
+  title = {Automatic acoustic identification of individuals in multiple species: improving identification across recording conditions},
+  journal = {Journal of The Royal Society Interface},
+  volume = {16},
+  number = {153},
+  pages = {20180940},
+  year = {2019},
+  %doi = {10.1098/rsif.2018.0940},
+  %URL = {https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2018.0940},
+  %eprint = {https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2018.0940},
+  %abstract = { Many animals emit vocal sounds which, independently from the sounds’ function, contain some individually distinctive signature. Thus the automatic recognition of individuals by sound is a potentially powerful tool for zoology and ecology research and practical monitoring. Here, we present a general automatic identification method that can work across multiple animal species with various levels of complexity in their communication systems. We further introduce new analysis techniques based on dataset manipulations that can evaluate the robustness and generality of a classifier. By using these techniques, we confirmed the presence of experimental confounds in situations resembling those from past studies. We introduce data manipulations that can reduce the impact of these confounds, compatible with any classifier. We suggest that assessment of confounds should become a standard part of future studies to ensure they do not report over-optimistic results. We provide annotated recordings used for analyses along with this study and we call for dataset sharing to be a common practice to enhance the development of methods and comparisons of results.},
+}
+
+% biodiversity, metrics, entropy
+@article{Sueur2009,
+  author = {Sueur, Jérôme AND Pavoine, Sandrine AND Hamerlynck, Olivier AND Duvail, Stéphanie},
+  title = {Rapid Acoustic Survey for Biodiversity Appraisal},
+  journal = {PLOS ONE},
+  publisher = {Public Library of Science},
+  volume = {3},
+  number = {12},
+  pages = {1-9},
+  month = {12},
+  year = {2009},
+  %url = {https://doi.org/10.1371/journal.pone.0004065},
+  %doi = {10.1371/journal.pone.0004065},
+  %abstract = {Biodiversity assessment remains one of the most difficult challenges encountered by ecologists and conservation biologists. This task is becoming even more urgent with the current increase of habitat loss. Many methods–from rapid biodiversity assessments (RBA) to all-taxa biodiversity inventories (ATBI)–have been developed for decades to estimate local species richness. However, these methods are costly and invasive. Several animals–birds, mammals, amphibians, fishes and arthropods–produce sounds when moving, communicating or sensing their environment. Here we propose a new concept and method to describe biodiversity. We suggest to forego species or morphospecies identification used by ATBI and RBA respectively but rather to tackle the problem at another evolutionary unit, the community level. We also propose that a part of diversity can be estimated and compared through a rapid acoustic analysis of the sound produced by animal communities. We produced α and β diversity indexes that we first tested with 540 simulated acoustic communities. The α index, which measures acoustic entropy, shows a logarithmic correlation with the number of species within the acoustic community. The β index, which estimates both temporal and spectral dissimilarities, is linearly linked to the number of unshared species between acoustic communities. We then applied both indexes to two closely spaced Tanzanian dry lowland coastal forests. Indexes reveal for this small sample a lower acoustic diversity for the most disturbed forest and acoustic dissimilarities between the two forests suggest that degradation could have significantly decreased and modified community composition. Our results demonstrate for the first time that an indicator of biological diversity can be reliably obtained in a non-invasive way and with a limited sampling effort. This new approach may facilitate the appraisal of animal diversity at large spatial and temporal scales.},
+}
+
+% ecology, pam, monitoring
+@article{Ross2023PAMEcoQuestions,
+  author = {Ross, Samuel R. P.-J. and O'Connell, Darren P. and Deichmann, Jessica L. and Desjonquères, Camille and Gasc, Amandine and Phillips, Jennifer N. and Sethi, Sarab S. and Wood, Connor M. and Burivalova, Zuzana},
+  title = {Passive acoustic monitoring provides a fresh perspective on fundamental ecological questions},
+  journal = {Functional Ecology},
+  volume = {37},
+  number = {4},
+  pages = {959-975},
+  year = {2023},
+  %doi = {https://doi.org/10.1111/1365-2435.14275},
+  %url = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2435.14275},
+  %eprint = {https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/1365-2435.14275},
+  %keywords = {acoustic index, bioacoustics, biodiversity, ecoacoustics, sensor array, soundscape, spatiotemporal scale},
+  %abstract = {Abstract Passive acoustic monitoring (PAM) has emerged as a transformative tool for applied ecology, conservation and biodiversity monitoring, but its potential contribution to fundamental ecology is less often discussed, and fundamental PAM studies tend to be descriptive, rather than mechanistic. Here, we chart the most promising directions for ecologists wishing to use the suite of currently available acoustic methods to address long-standing fundamental questions in ecology and explore new avenues of research. In both terrestrial and aquatic habitats, PAM provides an opportunity to ask questions across multiple spatial scales and at fine temporal resolution, and to capture phenomena or species that are difficult to observe. In combination with traditional approaches to data collection, PAM could release ecologists from myriad limitations that have, at times, precluded mechanistic understanding. We discuss several case studies to demonstrate the potential contribution of PAM to biodiversity estimation, population trend analysis, assessing climate change impacts on phenology and distribution, and understanding disturbance and recovery dynamics. We also highlight what is on the horizon for PAM, in terms of near-future technological and methodological developments that have the potential to provide advances in coming years. Overall, we illustrate how ecologists can harness the power of PAM to address fundamental ecological questions in an era of ecology no longer characterised by data limitation. Read the free Plain Language Summary for this article on the Journal blog.},
+}
+
+% biodiversity, climate change, ecoacoustics
+@article{Krause2016EcoacousticClimate,
+  author = {Bernie Krause and Almo Farina},
+  title = {Using ecoacoustic methods to survey the impacts of climate change on biodiversity},
+  journal = {Biological Conservation},
+  volume = {195},
+  pages = {245-254},
+  year = {2016},
+  %issn = {0006-3207},
+  %doi = {https://doi.org/10.1016/j.biocon.2016.01.013},
+  %url = {https://www.sciencedirect.com/science/article/pii/S0006320716300118},
+  %keywords = {Climate change, Biodiversity conservation, Ecoacoustics, Acoustic adaptation hypothesis, Acoustic niche hypothesis, Acoustic active space, Acoustic community, Acoustic phenology},
+  %abstract = {Climate change is an important cause of the irreversible transformation of habitats, of the rapid extinction of species, and of the dramatic changes in entire communities, especially for tropical assemblages and for habitat- and range-restricted species, such as mountaintop and polar species. In particular, climate change effects several aspects of animal sounds (e.g., song amplitude and frequency, song post, and sound phenology). Animal sounds, which are life traits characterized by high plasticity, are able to cope with even modest variations of environmental fundamentals like vegetation cover, land mosaic structure, temperature, humidity, and pH (for aquatic medium). Moreover, the climatic effects on these biophonies can be observed earlier than change in vegetation patterns and visible landscape structures. Ecoacoustics, the discipline that investigates the role of sound on animal ecology from species to landscapes, offers robust models, such as acoustic adaptation, acoustic niche, acoustic active space, acoustic community, and acoustic phenology to investigate the effect of climate change on species, populations, communities, and landscapes. From an operational perspective, ecoacoustics procedures can be applied in different contexts, such as locations, weather, species, populations, behavior, physiology, and phenology. In addition, thematic priorities can be selected, such as latitudinal and altitudinal gradients, restricted habitats, stopover areas, extreme environments, weather conditions, short distance migrants, species at high vocal plasticity, sink-source status, active space, social attraction, physiological modifications, dawn and dusk choruses, sound from stressed plants, and time series analysis. The noninvasiveness of passive acoustic recording, the simultaneous collection of important data, such as community richness and diversity, immigration and extinction events, and singing dynamics as well as the availability of innovative noninvasive technologies operating over a long-term period, establish ecoacoustics as a new and important tool with which it is possible to analyze massive acoustic data sets and quickly predict and/or evaluate the effects of climate change on the environment. Moreover, passive recording is supported by cheap, user-friendly field sensors and robust data processing and may be part of the citizen science research agenda on climate change.},
+}
+
 % marine, animal welfare, monitoring
 @article{Winship2023Marine,
   author = {Winship, Kelley A. and Jones, Brittany L.},
@@ -138,7 +247,7 @@
   %doi={10.1109/NaNA56854.2022.00063},
 }
 
-% identify animal species
+% identify animal species, asi, monitoring
 @article{Ovaskainen2018ASI,
   author = {Ovaskainen, Otso and Moliterno de Camargo, Ulisses and Somervuo, Panu},
   title = {Animal Sound Identifier (ASI): software for automated identification of vocal animals},
@@ -168,7 +277,7 @@
 }
 
 % soundscape, encoding
-@article{Sethi2020SoundscapeFeature
+@article{Sethi2020SoundscapeFeature,
   author = {Sarab S. Sethi  and Nick S. Jones  and Ben D. Fulcher  and Lorenzo Picinali  and Dena Jane Clink  and Holger Klinck  and C. David L. Orme  and Peter H. Wrege  and Robert M. Ewers },
   title = {Characterizing soundscapes across diverse ecosystems using a universal acoustic feature set},
   journal = {Proceedings of the National Academy of Sciences},
@@ -348,7 +457,7 @@
   %abstract = {Reliable estimation of the size or density of wild animal populations is very important for effective wildlife management, conservation and ecology. Currently, the most widely used methods for obtaining such estimates involve either sighting animals from transect lines or some form of capture-recapture on marked or uniquely identifiable individuals. However, many species are difficult to sight, and cannot be easily marked or recaptured. Some of these species produce readily identifiable sounds, providing an opportunity to use passive acoustic data to estimate animal density. In addition, even for species for which other visually based methods are feasible, passive acoustic methods offer the potential for greater detection ranges in some environments (e.g. underwater or in dense forest), and hence potentially better precision. Automated data collection means that surveys can take place at times and in places where it would be too expensive or dangerous to send human observers. Here, we present an overview of animal density estimation using passive acoustic data, a relatively new and fast-developing field. We review the types of data and methodological approaches currently available to researchers and we provide a framework for acoustics-based density estimation, illustrated with examples from real-world case studies. We mention moving sensor platforms (e.g. towed acoustics), but then focus on methods involving sensors at fixed locations, particularly hydrophones to survey marine mammals, as acoustic-based density estimation research to date has been concentrated in this area. Primary among these are methods based on distance sampling and spatially explicit capture-recapture. The methods are also applicable to other aquatic and terrestrial sound-producing taxa. We conclude that, despite being in its infancy, density estimation based on passive acoustic data likely will become an important method for surveying a number of diverse taxa, such as sea mammals, fish, birds, amphibians, and insects, especially in situations where inferences are required over long periods of time. There is considerable work ahead, with several potentially fruitful research areas, including the development of (i) hardware and software for data acquisition, (ii) efficient, calibrated, automated detection and classification systems, and (iii) statistical approaches optimized for this application. Further, survey design will need to be developed, and research is needed on the acoustic behaviour of target species. Fundamental research on vocalization rates and group sizes, and the relation between these and other factors such as season or behaviour state, is critical. Evaluation of the methods under known density scenarios will be important for empirically validating the approaches presented here. © 2012 Cambridge Philosophical Society.},
 }
 
-% soundscape
+% soundscape, biodiversity
 @article{Sethi2022Spsoitf,
   author = {Sarab S. Sethi and Robert M. Ewers and Nick S. Jones and Jani Sleutel and Adi Shabrani and Nursyamin Zulkifli and Lorenzo Picinali},
   title = {Soundscapes predict species occurrence in tropical forests},
@@ -375,6 +484,22 @@
   %url = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13438},
   %eprint = {https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.13438},
   %abstract = {Abstract Automated monitoring approaches offer an avenue to unlocking large-scale insight into how ecosystems respond to human pressures. However, since data collection and data analyses are often treated independently, there are currently no open-source examples of end-to-end, real-time ecological monitoring networks. Here, we present the complete implementation of an autonomous acoustic monitoring network deployed in the tropical rainforests of Borneo. Real-time audio is uploaded remotely from the field, indexed by a central database, and delivered via an API to a public-facing website. We provide the open-source code and design of our monitoring devices, the central web2py database, and the ReactJS website. Furthermore, we demonstrate an extension of this infrastructure to deliver real-time analyses of the eco-acoustic data. By detailing a fully functional, open source, and extensively tested design, our work will accelerate the rate at which fully autonomous monitoring networks mature from technological curiosities, and towards genuinely impactful tools in ecology.},
+}
+
+% monitoring, autonomous, hardware
+@article{Sethi2018AutonomousMonitoring,
+  author = {Sethi, Sarab S. and Ewers, Robert M. and Jones, Nick S. and Orme, Christopher David L. and Picinali, Lorenzo},
+  title = {Robust, real-time and autonomous monitoring of ecosystems with an open, low-cost, networked device},
+  journal = {Methods in Ecology and Evolution},
+  volume = {9},
+  number = {12},
+  pages = {2383-2387},
+  year = {2018},
+  %keywords = {acoustic monitoring, autonomous monitoring, biodiversity monitoring, ecosystem monitoring, open-source software, real-time monitoring},
+  %doi = {https://doi.org/10.1111/2041-210X.13089},
+  %url = {https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13089},
+  %eprint = {https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.13089},
+  %abstract = {Abstract Automated methods of monitoring ecosystems provide a cost-effective way to track changes in natural system's dynamics across temporal and spatial scales. However, methods of recording and storing data captured from the field still require significant manual effort. Here, we introduce an open source, inexpensive, fully autonomous ecosystem monitoring unit for capturing and remotely transmitting continuous data streams from field sites over long time-periods. We provide a modular software framework for deploying various sensors, together with implementations to demonstrate proof of concept for continuous audio monitoring and time-lapse photography. We show how our system can outperform comparable technologies for fractions of the cost, provided a local mobile network link is available. The system is robust to unreliable network signals and has been shown to function in extreme environmental conditions, such as in the tropical rainforests of Sabah, Borneo. We provide full details on how to assemble the hardware, and the open-source software. Paired with appropriate automated analysis techniques, this system could provide spatially dense, near real-time, continuous insights into ecosystem and biodiversity dynamics at a low cost.},
 }
 
 % schlüter, bird
